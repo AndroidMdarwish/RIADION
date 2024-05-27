@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سهم عريض ومفرغ</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .arrows {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(228, 220, 220);
+            clip-path: polygon(
+                0 40%,  /* بداية الذيل */
+                60% 40%,  /* نهاية الذيل وبداية الرأس */
+                60% 20%,  /* نقطة داخلية في الرأس */
+                100% 50%,  /* قمة الرأس */
+                60% 80%,  /* نقطة داخلية في الرأس */
+                60% 60%,  /* نهاية الرأس وبداية الذيل */
+                0 60%  /* نهاية الذيل */
+            );
+        }
+
+        .arrow {
+            position: relative;
+            width: 10%;
+            height: 10%;
+            background-color: #000;
+            clip-path: polygon(
+                0 30%,   /* بداية الذيل */
+                70% 30%, /* نهاية الذيل وبداية الرأس */
+                70% 0%,  /* نقطة داخلية في الرأس */
+                100% 50%, /* قمة الرأس */
+                70% 100%, /* نقطة داخلية في الرأس */
+                70% 70%, /* نهاية الرأس وبداية الذيل */
+                0 70%   /* نهاية الذيل */
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow"></div>
+</body>
+</html>
+
